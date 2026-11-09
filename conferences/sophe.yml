@@ -1,0 +1,25 @@
+name: SOPHE Annual Conference
+short: SOPHE
+sponsors: [Society for Public Health Education]
+sponsor_type: US society
+kind: education
+disciplines: [Health Education]
+url: https://www.sophe.org/conferences_events/annual-conference/
+frequency: annual
+schedule: Every spring; abstracts are usually due in September or October.
+summary: For health education and health promotion researchers, teachers, and practitioners, including school health and health communication tracks.
+checked: 2026-11-09
+meetings:
+  - name: SOPHE 2027 (78th Annual Conference)
+    start: 2027-03-17
+    end: 2027-03-19
+    city: Cincinnati, Ohio
+    country: USA
+    venue: First Financial Center
+    format: in person
+    url: https://www.sophe.org/conferences_events/annual-conference/
+    dates_source: official
+    note: Preconference day March 16.
+    deadlines:
+      - {label: Abstracts due, date: 2026-09-21, kind: proposal}
+      - {label: Decisions sent, date: 2026-11-12, kind: other}

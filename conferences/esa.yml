@@ -1,0 +1,21 @@
+name: Ecological Society of America Annual Meeting
+short: ESA
+sponsors: [Ecological Society of America]
+sponsor_type: US society
+kind: track
+disciplines: [Bioscience, Human Dimensions]
+url: https://esa.org/
+frequency: annual
+schedule: Every late July or early August; abstracts are usually due in February.
+travel_support: ESA offers financial aid for attending the annual meeting.
+summary: The largest meeting of ecologists, with an Education section, sessions on ecology education and public engagement, and work on people and ecosystems.
+checked: 2026-11-09
+meetings:
+  - name: ESA 2027 Annual Meeting
+    start: 2027-07-25
+    end: 2027-07-30
+    city: Toronto, Ontario
+    country: Canada
+    venue: Metro Toronto Convention Centre
+    url: https://esa.org/toronto2027/
+    dates_source: announced

@@ -1,0 +1,21 @@
+name: CANVAS (ASA, CSSA, and SSSA Annual Meeting)
+short: CANVAS
+sponsors: [American Society of Agronomy, Crop Science Society of America, Soil Science Society of America]
+sponsor_type: US society
+kind: track
+disciplines: [Agriculture, Earth Science]
+url: https://www.sciencesocieties.org/canvas
+frequency: annual
+schedule: Every fall, in late October or November; travel award applications are usually due in early July.
+travel_support: CANVAS travel awards help members attend; applications usually open in May and close in July.
+travel_support_url: https://www.sciencesocieties.org/canvas/faqs
+summary: The joint meeting of the agronomy, crop, and soil science societies, with an Education and Extension section and sessions on teaching in the plant and soil sciences.
+checked: 2026-11-09
+meetings:
+  - name: CANVAS 2027
+    start: 2027-10-31
+    end: 2027-11-03
+    city: Columbus, Ohio
+    country: USA
+    url: https://www.sciencesocieties.org/canvas
+    dates_source: announced

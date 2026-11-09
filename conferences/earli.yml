@@ -1,0 +1,20 @@
+name: EARLI Biennial Conference
+short: EARLI
+sponsors: [European Association for Research on Learning and Instruction]
+sponsor_type: International society
+kind: education
+disciplines: [Learning Science]
+url: https://www.earli.org/
+frequency: biennial
+schedule: Every two years in late August, in odd years, after the JURE conference for early-career researchers; EARLI's special interest groups meet in even years.
+summary: The largest European meeting on research in learning and instruction, organized around special interest groups on topics such as conceptual change, instructional design, and motivation.
+checked: 2026-11-09
+meetings:
+  - name: EARLI 2027
+    start: 2027-08-23
+    end: 2027-08-27
+    city: Belfast, Northern Ireland
+    country: United Kingdom
+    venue: Queen's University Belfast
+    url: https://www.earli.org/events/earli2027
+    dates_source: announced

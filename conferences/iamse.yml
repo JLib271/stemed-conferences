@@ -1,0 +1,19 @@
+name: IAMSE Annual Conference
+short: IAMSE
+sponsors: [International Association of Medical Science Educators]
+sponsor_type: International society
+kind: education
+disciplines: [Health Education]
+url: https://www.iamse.org/
+frequency: annual
+schedule: Every June.
+summary: For people who teach the basic and health sciences to medical and health professions students, with research and teaching-innovation sessions.
+checked: 2026-11-09
+meetings:
+  - name: IAMSE 2027
+    start: 2027-06-05
+    end: 2027-06-08
+    city: Bellevue, Washington
+    country: USA
+    url: https://www.iamse.org/
+    dates_source: announced

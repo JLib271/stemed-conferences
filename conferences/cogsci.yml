@@ -1,0 +1,20 @@
+name: Annual Meeting of the Cognitive Science Society
+short: CogSci
+sponsors: [Cognitive Science Society]
+sponsor_type: International society
+kind: track
+disciplines: [Learning Science]
+url: https://cognitivesciencesociety.org/
+frequency: annual
+schedule: Every July; papers are usually due in early February. Every third year (2025, 2028, ...) is fully hybrid.
+summary: The main interdisciplinary meeting on cognition, with research on learning, reasoning, and education across psychology, AI, linguistics, and neuroscience.
+checked: 2026-11-09
+meetings:
+  - name: CogSci 2027
+    start: 2027-07-28
+    end: 2027-07-31
+    city: Bilbao
+    country: Spain
+    venue: Euskalduna Bilbao Convention Centre
+    url: https://cognitivesciencesociety.org/cogsci-2027/
+    dates_source: announced

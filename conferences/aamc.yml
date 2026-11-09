@@ -1,0 +1,27 @@
+name: "Learn Serve Lead: The AAMC Annual Meeting"
+short: AAMC
+sponsors: [Association of American Medical Colleges]
+sponsor_type: US society
+kind: track
+disciplines: [Health Education]
+url: https://www.aamc.org/career-development/events/learn-serve-lead
+frequency: annual
+schedule: Every November; poster proposals are usually due in August.
+summary: The annual meeting of academic medicine, with sessions and poster receptions on medical education, curriculum, and assessment.
+checked: 2026-11-09
+meetings:
+  - name: Learn Serve Lead 2026
+    start: 2026-11-06
+    end: 2026-11-10
+    city: Anaheim, California
+    country: USA
+    venue: Anaheim Convention Center
+    url: https://www.aamc.org/professional-development/events/learn-serve-lead
+    dates_source: official
+  - name: Learn Serve Lead 2027
+    start: 2027-11-12
+    end: 2027-11-16
+    city: Washington, DC
+    country: USA
+    url: https://www.aamc.org/career-development/events/learn-serve-lead
+    dates_source: official

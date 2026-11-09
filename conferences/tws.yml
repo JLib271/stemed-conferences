@@ -1,0 +1,28 @@
+name: The Wildlife Society Annual Conference
+short: TWS
+sponsors: [The Wildlife Society]
+sponsor_type: US society
+kind: track
+disciplines: [Bioscience, Human Dimensions]
+url: https://wildlife.org/annual-conference/about-the-annual-conference/
+frequency: annual
+schedule: Every October or November; symposium and workshop proposals are usually due in March.
+travel_support: TWS lists travel grants for its annual conference.
+travel_support_url: https://wildlife.org/annual-conference/about-the-annual-conference/
+summary: The main meeting for wildlife professionals, with a Human Dimensions Working Group and sessions on wildlife education, outreach, and people and wildlife.
+checked: 2026-11-09
+meetings:
+  - name: TWS 2027 Annual Conference
+    start: 2027-10-17
+    end: 2027-10-21
+    city: Sacramento, California
+    country: USA
+    url: https://wildlife.org/annual-conference/about-the-annual-conference/
+    dates_source: official
+  - name: TWS 2028 Annual Conference
+    start: 2028-10-29
+    end: 2028-11-02
+    city: Dallas, Texas
+    country: USA
+    url: https://wildlife.org/annual-conference/about-the-annual-conference/
+    dates_source: official
