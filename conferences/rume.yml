@@ -1,0 +1,26 @@
+name: Conference on Research in Undergraduate Mathematics Education
+short: RUME
+sponsors: [MAA Special Interest Group on Research in Undergraduate Mathematics Education (SIGMAA on RUME)]
+sponsor_type: US society
+kind: education
+disciplines: [Mathematics]
+url: https://sigmaa.maa.org/rume/
+frequency: annual
+schedule: Every February; papers are usually due in the fall.
+travel_support: Student scholarships are offered.
+travel_support_url: https://sites.google.com/view/rume2027
+summary: Research on how undergraduates learn mathematics and how it is taught, with contributed, preliminary, and theoretical reports.
+checked: 2026-11-09
+meetings:
+  - name: RUME 2027
+    start: 2027-02-25
+    end: 2027-02-27
+    city: San Diego, California
+    country: USA
+    venue: Westin San Diego Bayview
+    format: hybrid
+    url: https://sites.google.com/view/rume2027
+    dates_source: official
+    deadlines:
+      - {label: Early registration ends, date: 2027-01-09, kind: registration}
+      - {label: One author per paper registered, date: 2027-01-23, kind: registration}

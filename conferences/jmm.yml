@@ -1,0 +1,23 @@
+name: Joint Mathematics Meetings
+short: JMM
+sponsors: [American Mathematical Society, Mathematical Association of America, and partner societies]
+sponsor_type: US society
+kind: track
+disciplines: [Mathematics]
+url: https://www.jointmathematicsmeetings.org/
+frequency: annual
+schedule: Every January; contributed abstracts are usually due in September.
+summary: The largest mathematics meeting, with MAA and AMS sessions on teaching and learning, contributed papers on mathematics education, and programs for students.
+checked: 2026-11-09
+meetings:
+  - name: JMM 2027
+    start: 2027-01-12
+    end: 2027-01-15
+    city: Chicago, Illinois
+    country: USA
+    venue: McCormick Place
+    format: in person
+    url: https://meetings.ams.org/math/jmm2027/cfp.cgi
+    dates_source: official
+    deadlines:
+      - {label: Abstracts due, date: 2026-09-15, kind: proposal}

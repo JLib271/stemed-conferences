@@ -1,0 +1,33 @@
+name: AAPT National Meetings
+short: AAPT
+sponsors: [American Association of Physics Teachers]
+sponsor_type: US society
+kind: education
+disciplines: [Physics]
+url: https://aapt.org/Events/meetings.cfm
+frequency: annual
+schedule: The Summer Meeting runs each July or August. The January 2027 Winter Meeting is the last Winter Meeting.
+summary: Physics teachers from high school through university share teaching ideas, workshops, and physics education research.
+checked: 2026-11-09
+meetings:
+  - name: AAPT 2027 Winter Meeting (the last Winter Meeting)
+    start: 2027-01-09
+    end: 2027-01-11
+    city: New Orleans, Louisiana
+    country: USA
+    venue: Hilton New Orleans Riverside
+    format: in person
+    url: https://aapt.org/Conferences/WM2027/
+    dates_source: official
+    deadlines:
+      - {label: Abstracts due, date: 2026-09-04, kind: proposal}
+      - {label: Posters due, date: 2026-10-23, kind: proposal}
+  - name: AAPT 2027 Summer Meeting
+    start: 2027-07-31
+    end: 2027-08-04
+    city: Washington, DC
+    country: USA
+    venue: Grand Hyatt Washington
+    format: in person
+    url: https://aapt.org/Events/meetings.cfm
+    dates_source: official

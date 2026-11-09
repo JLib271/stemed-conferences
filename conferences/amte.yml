@@ -1,0 +1,25 @@
+name: AMTE Annual Conference
+short: AMTE
+sponsors: [Association of Mathematics Teacher Educators]
+sponsor_type: US society
+kind: education
+disciplines: [Mathematics]
+url: https://amte.net/conference
+frequency: annual
+schedule: Every February; proposals are usually due in May.
+summary: For people who prepare and support mathematics teachers, with research and practice sessions on teacher education.
+checked: 2026-11-09
+meetings:
+  - name: AMTE 2027 (31st Annual Conference)
+    start: 2027-02-11
+    end: 2027-02-13
+    city: Baltimore, Maryland
+    country: USA
+    venue: Marriott Baltimore Waterfront
+    format: in person
+    url: https://amte.net/node/5529
+    dates_source: official
+    deadlines:
+      - {label: Proposals due, date: 2026-05-18, kind: proposal}
+      - {label: Regular registration ends, date: 2026-12-15, kind: registration}
+      - {label: Late registration ends, date: 2027-02-05, kind: registration}

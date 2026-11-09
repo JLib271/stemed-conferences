@@ -1,0 +1,19 @@
+name: NCSM Annual Conference
+short: NCSM
+sponsors: [NCSM (National Council of Supervisors of Mathematics)]
+sponsor_type: US society
+kind: education
+disciplines: [Mathematics]
+url: https://www.mathedleadership.org/
+frequency: annual
+schedule: Each fall, just before the NCTM Annual Meeting.
+summary: For mathematics education leaders, coaches, and supervisors, on leading improvement in school mathematics.
+checked: 2026-11-09
+meetings:
+  - name: NCSM 2027
+    start: 2027-10-25
+    end: 2027-10-27
+    city: Orlando, Florida
+    country: USA
+    url: https://www.mathedleadership.org/
+    dates_source: official

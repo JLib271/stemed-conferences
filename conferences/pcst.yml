@@ -1,0 +1,26 @@
+name: PCST Conference
+short: PCST
+sponsors: [Network for the Public Communication of Science and Technology (PCST Network)]
+sponsor_type: International society
+kind: field
+disciplines: [Science & Health Communication]
+url: https://www.pcst.network/conferences/overview/
+frequency: biennial
+schedule: Every two years in May, in odd years; proposals are usually due the October before. PCST 2029 will be in Mexico City.
+summary: The international meeting of science communication researchers, practitioners, and educators, mixing research talks, reflections on practice, and workshops.
+checked: 2026-11-09
+meetings:
+  - name: PCST 2027
+    start: 2027-05-24
+    end: 2027-05-27
+    city: Shanghai
+    country: China
+    venue: Hosted by Shanghai Jiao Tong University
+    url: https://www.pcst.network/conferences/upcoming-conference/
+    dates_source: official
+    note: Workshops May 24; conference May 25–27.
+    deadlines:
+      - {label: Proposals due, date: 2026-10-19, kind: proposal}
+      - {label: Decisions sent, date: 2026-12-14, kind: other}
+      - {label: Early registration ends, date: 2027-01-31, kind: registration}
+      - {label: Presenters must register, date: 2027-04-05, kind: registration}

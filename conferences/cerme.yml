@@ -1,0 +1,25 @@
+name: Congress of the European Society for Research in Mathematics Education
+short: CERME
+sponsors: [European Society for Research in Mathematics Education (ERME)]
+sponsor_type: International society
+kind: education
+disciplines: [Mathematics]
+url: https://www.mathematik.uni-dortmund.de/~erme/
+frequency: biennial
+schedule: Every two years in February, in odd years; papers are usually due the September before.
+summary: A working-group congress for mathematics education researchers, built around extended discussion of papers in thematic groups.
+checked: 2026-11-09
+meetings:
+  - name: CERME15
+    start: 2027-02-08
+    end: 2027-02-12
+    city: Bratislava
+    country: Slovakia
+    venue: Comenius University Bratislava
+    url: https://www.cerme15.org/
+    dates_source: official
+    note: Preceded by the YERME day for early-career researchers, February 7–8.
+    deadlines:
+      - {label: Papers and posters due, date: 2026-09-15, kind: proposal}
+      - {label: Reduced registration fee ends, date: 2026-12-15, kind: registration}
+      - {label: Registration closes, date: 2027-01-04, kind: registration}

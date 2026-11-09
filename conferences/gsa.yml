@@ -1,0 +1,40 @@
+name: GSA Connects and Section Meetings
+short: GSA
+sponsors: [Geological Society of America]
+sponsor_type: US society
+kind: track
+disciplines: [Earth Science]
+url: https://connects.geosociety.org/future-meetings
+frequency: annual
+schedule: GSA Connects each October, with abstracts due in the summer; regional section meetings each spring.
+summary: The Geoscience Education Division and the National Association of Geoscience Teachers run education sessions at GSA Connects and the section meetings.
+checked: 2026-11-09
+meetings:
+  - name: GSA Northeastern Section 2027
+    start: 2027-03-11
+    end: 2027-03-14
+    city: Saratoga Springs, New York
+    country: USA
+    url: https://www.geosociety.org/
+    dates_source: announced
+  - name: GSA Cordilleran Section 2027
+    start: 2027-04-15
+    end: 2027-04-18
+    city: Pasadena, California
+    country: USA
+    url: https://www.geosociety.org/
+    dates_source: announced
+  - name: GSA Southeastern Section 2027
+    start: 2027-04-25
+    end: 2027-04-28
+    city: Savannah, Georgia
+    country: USA
+    url: https://www.geosociety.org/
+    dates_source: announced
+  - name: GSA Connects 2027
+    start: 2027-10-17
+    end: 2027-10-20
+    city: Montréal, Quebec
+    country: Canada
+    url: https://connects.geosociety.org/future-meetings
+    dates_source: official

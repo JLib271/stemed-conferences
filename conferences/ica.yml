@@ -1,0 +1,22 @@
+name: ICA Annual Conference
+short: ICA
+sponsors: [International Communication Association]
+sponsor_type: International society
+kind: field
+disciplines: [Science & Health Communication]
+url: https://www.icahdq.org/
+frequency: annual
+schedule: Every May or June; papers are usually due in early November.
+summary: The largest communication research meeting; its Health Communication division and Science Communication interest group cover science and health communication research.
+checked: 2026-11-09
+meetings:
+  - name: ICA 2027 (77th Annual Conference)
+    start: 2027-06-03
+    end: 2027-06-07
+    city: Glasgow, Scotland
+    country: United Kingdom
+    url: https://cdn.ymaws.com/www.icahdq.org/resource/resmgr/conference/2027/ica27_cfp.pdf
+    dates_source: official
+    deadlines:
+      - {label: Papers due, date: 2026-11-02, kind: proposal}
+      - {label: Decisions sent, date: 2027-01-13, kind: other}

@@ -1,0 +1,20 @@
+name: RCML Annual Conference
+short: RCML
+sponsors: [Research Council on Mathematics Learning]
+sponsor_type: US society
+kind: education
+disciplines: [Mathematics]
+url: https://www.rcml-math.org/upcoming-conference-information
+frequency: annual
+schedule: Every February or March; proposals open in the summer.
+summary: A small research meeting on mathematics learning and teaching, known for supporting graduate students and early-career researchers.
+checked: 2026-11-09
+meetings:
+  - name: RCML 2027 (54th Annual Conference)
+    start: 2027-03-11
+    end: 2027-03-13
+    city: Williamsburg, Virginia
+    country: USA
+    venue: Williamsburg Lodge
+    url: https://www.rcml-math.org/upcoming-conference-information
+    dates_source: official

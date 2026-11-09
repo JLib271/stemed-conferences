@@ -1,0 +1,19 @@
+name: International Congress on Mathematical Education
+short: ICME
+sponsors: [International Commission on Mathematical Instruction (ICMI)]
+sponsor_type: International society
+kind: education
+disciplines: [Mathematics]
+url: https://www.mathunion.org/icmi
+frequency: quadrennial
+schedule: Every four years in July.
+summary: The world congress of mathematics education, held under ICMI, with topic study groups, lectures, and national presentations.
+checked: 2026-11-09
+meetings:
+  - name: ICME-16
+    start: 2028-07-09
+    end: 2028-07-16
+    city: Prague
+    country: Czech Republic
+    url: https://www.mathunion.org/icmi
+    dates_source: announced

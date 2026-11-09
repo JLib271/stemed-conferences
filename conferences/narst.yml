@@ -1,0 +1,24 @@
+name: NARST Annual International Conference
+short: NARST
+sponsors: [NARST (National Association for Research in Science Teaching)]
+sponsor_type: US society
+kind: education
+disciplines: [Science Education]
+url: https://narst.org/conferences
+frequency: annual
+schedule: Every March or April; proposals are usually due in mid-August.
+summary: The main research meeting for science education researchers, with strands on learning, teaching, teacher education, equity, policy, and informal science.
+checked: 2026-11-09
+meetings:
+  - name: NARST 2027 (100th Annual International Conference)
+    start: 2027-03-14
+    end: 2027-03-17
+    city: Boston, Massachusetts
+    country: USA
+    venue: Sheraton Boston
+    format: hybrid
+    url: https://narst.org/conferences/2027-annual-conference
+    dates_source: official
+    note: In person March 14–17, plus a virtual day on March 31.
+    deadlines:
+      - {label: Proposals due, date: 2026-08-15, kind: proposal}

@@ -1,0 +1,20 @@
+name: History of Science Society Annual Meeting
+short: HSS
+sponsors: [History of Science Society]
+sponsor_type: US society
+kind: field
+disciplines: [History & Philosophy of Science]
+url: https://hssonline.org/
+frequency: annual
+schedule: Usually in November (2026 was a joint meeting with the European Society for the History of Science in Edinburgh in July); proposals are usually due in April.
+summary: The main meeting for historians of science, technology, and medicine.
+checked: 2026-11-09
+meetings:
+  - name: HSS 2027 Annual Meeting
+    start: 2027-11-18
+    end: 2027-11-21
+    city: Washington, DC
+    country: USA
+    url: https://hssonline.org/
+    dates_source: announced
+    note: Held with the Society for Literature, Science, and the Arts (SLSA).

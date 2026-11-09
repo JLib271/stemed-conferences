@@ -1,0 +1,19 @@
+name: NCTM Annual Meeting & Exposition
+short: NCTM
+sponsors: [National Council of Teachers of Mathematics]
+sponsor_type: US society
+kind: education
+disciplines: [Mathematics]
+url: https://www.nctm.org/conferences/
+frequency: annual
+schedule: Each fall, in September or October, with a research track; proposals are usually taken from late summer into the fall.
+summary: For mathematics teachers, coaches, leaders, and researchers, with sessions from pre-K through college and a research track.
+checked: 2026-11-09
+meetings:
+  - name: NCTM 2027 Annual Meeting
+    start: 2027-10-27
+    end: 2027-10-30
+    city: Orlando, Florida
+    country: USA
+    url: https://www.nctm.org/conferences/
+    dates_source: announced

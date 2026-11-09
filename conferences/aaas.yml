@@ -1,0 +1,20 @@
+name: AAAS Annual Meeting
+short: AAAS
+sponsors: [American Association for the Advancement of Science]
+sponsor_type: US society
+kind: track
+disciplines: [Science & Health Communication, Science Education]
+url: https://meetings.aaas.org/
+frequency: annual
+schedule: Every February.
+summary: A cross-disciplinary meeting with sessions on science communication, public engagement, science policy, and STEM education.
+checked: 2026-11-09
+meetings:
+  - name: AAAS 2027 Annual Meeting
+    start: 2027-02-18
+    end: 2027-02-20
+    city: Chicago, Illinois
+    country: USA
+    venue: Hyatt Regency Chicago
+    url: https://www.aaas.org/events/2027-annual-meeting
+    dates_source: official

@@ -1,0 +1,20 @@
+name: ISLS Annual Meeting
+short: ISLS
+sponsors: [International Society of the Learning Sciences]
+sponsor_type: International society
+kind: education
+disciplines: [Learning Science]
+url: https://www.isls.org/annual-meeting/
+frequency: annual
+schedule: Every June; it combines the International Conference of the Learning Sciences (ICLS) and Computer-Supported Collaborative Learning (CSCL). Papers are usually due in November.
+summary: The main meeting of the learning sciences, covering how people learn, design-based research, and learning technologies, in and out of school.
+checked: 2026-11-09
+meetings:
+  - name: ISLS 2027 Annual Meeting
+    start: 2027-06-12
+    end: 2027-06-16
+    city: Mumbai
+    country: India
+    venue: Indian Institute of Technology Bombay
+    url: https://www.isls.org/annual-meeting/
+    dates_source: announced

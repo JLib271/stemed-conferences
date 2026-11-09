@@ -1,0 +1,20 @@
+name: NABT Professional Development Conference
+short: NABT
+sponsors: [National Association of Biology Teachers]
+sponsor_type: US society
+kind: education
+disciplines: [Bioscience]
+url: https://nabt.org/Events-Future-Conferences
+frequency: annual
+schedule: Every November; session proposals are usually due April 1.
+summary: For biology teachers from middle school through college, with hands-on workshops, talks, and a research poster session.
+checked: 2026-11-09
+meetings:
+  - name: NABT 2027
+    start: 2027-11-04
+    end: 2027-11-07
+    city: Minneapolis, Minnesota
+    country: USA
+    venue: Hyatt Regency Minneapolis
+    url: https://nabt.org/Events-Future-Conferences
+    dates_source: official

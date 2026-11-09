@@ -1,0 +1,23 @@
+name: APS Global Physics Summit
+short: APS Summit
+sponsors: [American Physical Society]
+sponsor_type: US society
+kind: track
+disciplines: [Physics]
+url: https://www.aps.org/events
+frequency: annual
+schedule: Every spring (March or April); abstracts are usually due in October.
+summary: The APS spring meeting, with sessions from the Forum on Education and the Topical Group on Physics Education Research.
+checked: 2026-11-09
+meetings:
+  - name: APS Global Physics Summit 2027
+    start: 2027-04-11
+    end: 2027-04-16
+    city: Atlanta, Georgia
+    country: USA
+    venue: Georgia World Congress Center
+    url: https://www.aps.org/events/2027/summit
+    dates_source: official
+    deadlines:
+      - {label: Abstracts due, date: 2026-10-22, kind: proposal}
+      - {label: Early registration ends, date: 2027-02-25, kind: registration}

@@ -1,0 +1,31 @@
+name: ACS Spring and Fall Meetings (Division of Chemical Education)
+short: ACS CHED
+sponsors: [American Chemical Society, ACS Division of Chemical Education]
+sponsor_type: US society
+kind: track
+disciplines: [Chemistry]
+url: https://www.acs.org/meetings/acs-meetings.html
+frequency: twice a year
+schedule: Spring meeting in March or April and fall meeting in August; abstracts are usually due about six months ahead.
+travel_support: ACS and its divisions offer travel grants, especially for students; check the meeting pages.
+summary: The Division of Chemical Education runs symposia at both national ACS meetings, including chemistry education research and teaching sessions.
+checked: 2026-11-09
+meetings:
+  - name: ACS Spring 2027
+    start: 2027-03-21
+    end: 2027-03-25
+    city: New Orleans, Louisiana
+    country: USA
+    format: in person
+    url: https://callforabstracts.acs.org/acsspring2027/CHED
+    dates_source: official
+    deadlines:
+      - {label: Abstracts due, date: 2026-09-28, kind: proposal}
+  - name: ACS Fall 2027
+    start: 2027-08-22
+    end: 2027-08-26
+    city: San Diego, California
+    country: USA
+    url: https://www.acs.org/meetings/acs-meetings.html
+    dates_source: official
+    note: Abstract submission usually opens in the spring.

@@ -1,0 +1,38 @@
+name: ASEE Annual Conference & Exposition
+short: ASEE
+sponsors: [American Society for Engineering Education]
+sponsor_type: US society
+kind: education
+disciplines: [Engineering]
+url: https://asee.org/events/conferences-and-meetings/future-conference-dates
+frequency: annual
+schedule: Every June; abstracts are usually due in October and draft papers in January.
+summary: The main meeting for engineering and engineering technology education, with peer-reviewed papers across ASEE's divisions, including Educational Research and Methods.
+checked: 2026-11-09
+meetings:
+  - name: ASEE 2027 (134th Annual Conference)
+    start: 2027-06-20
+    end: 2027-06-23
+    city: Toronto, Ontario
+    country: Canada
+    venue: Metro Toronto Convention Centre
+    format: in person
+    url: https://www.asee.org/events/Conferences-and-Meetings/2027-Annual-Conference-Exposition
+    dates_source: official
+    deadlines:
+      - {label: Abstracts due, date: 2026-10-14, kind: proposal}
+      - {label: Draft papers due, date: 2027-01-20, kind: proposal}
+  - name: ASEE 2028
+    start: 2028-06-11
+    end: 2028-06-14
+    city: Pittsburgh, Pennsylvania
+    country: USA
+    url: https://asee.org/events/conferences-and-meetings/future-conference-dates
+    dates_source: official
+  - name: ASEE 2029
+    start: 2029-06-17
+    end: 2029-06-20
+    city: Salt Lake City, Utah
+    country: USA
+    url: https://asee.org/events/conferences-and-meetings/future-conference-dates
+    dates_source: official

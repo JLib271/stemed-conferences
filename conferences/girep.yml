@@ -1,0 +1,21 @@
+name: GIREP Conference
+short: GIREP
+sponsors: [GIREP (International Research Group on Physics Teaching), European Physical Society Physics Education Division]
+sponsor_type: International society
+kind: education
+disciplines: [Physics]
+url: https://girep.org/
+frequency: annual
+schedule: Each summer, usually in Europe; in some years it is held jointly with the EPS Physics Education Division (GIREP-EPEC).
+summary: An international meeting on physics teaching and physics education research, often with a summer school for doctoral students.
+checked: 2026-11-09
+meetings:
+  - name: GIREP-EPEC 2027
+    start: 2027-07-04
+    end: 2027-07-08
+    city: Glasgow, Scotland
+    country: United Kingdom
+    venue: University of Glasgow
+    url: https://indico.cern.ch/event/1684097/
+    dates_source: official
+    note: A GIREP summer school runs July 1–4.

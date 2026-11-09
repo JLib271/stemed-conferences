@@ -1,0 +1,20 @@
+name: Philosophy of Science Association Biennial Meeting
+short: PSA
+sponsors: [Philosophy of Science Association]
+sponsor_type: US society
+kind: field
+disciplines: [History & Philosophy of Science]
+url: https://www.philsci.org/conference.php
+frequency: biennial
+schedule: Every two years in November, in even years. In other years the PSA runs online regional conferences.
+summary: The largest meeting of philosophers of science, with contributed papers, symposia, and sessions from cognate societies.
+checked: 2026-11-09
+meetings:
+  - name: PSA 2026 (30th Biennial Meeting)
+    start: 2026-11-19
+    end: 2026-11-22
+    city: San Diego, California
+    country: USA
+    url: https://www.philsci.org/psa_2026.php
+    dates_source: official
+    note: A half-day AAAS SciLine media training workshop runs November 18 before the meeting.

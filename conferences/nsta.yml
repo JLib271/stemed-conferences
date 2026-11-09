@@ -1,0 +1,30 @@
+name: NSTA National Conference on Science Education
+short: NSTA
+sponsors: [National Science Teaching Association]
+sponsor_type: US society
+kind: education
+disciplines: [Science Education]
+url: https://www.nsta.org/conferences
+frequency: twice a year
+schedule: A spring national conference, and in some years a fall one; proposals for spring are usually due in October.
+summary: For K-12 and college science teachers, teacher educators, and leaders, with workshops, talks, and an exhibit hall.
+checked: 2026-11-09
+meetings:
+  - name: NSTA Boston 2027
+    start: 2027-03-17
+    end: 2027-03-20
+    city: Boston, Massachusetts
+    country: USA
+    format: in person
+    url: https://www.nsta.org/national-conference-science-education-boston-2027
+    dates_source: official
+    deadlines:
+      - {label: Proposals due, date: 2026-10-24, kind: proposal}
+      - {label: Early registration ends, date: 2027-02-05, kind: registration}
+  - name: NSTA Portland 2027
+    start: 2027-11-03
+    end: 2027-11-06
+    city: Portland, Oregon
+    country: USA
+    url: https://www.nsta.org/conferences
+    dates_source: announced

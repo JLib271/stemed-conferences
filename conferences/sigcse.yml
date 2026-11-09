@@ -1,0 +1,26 @@
+name: SIGCSE Technical Symposium
+short: SIGCSE TS
+sponsors: [ACM Special Interest Group on Computer Science Education]
+sponsor_type: US society
+kind: education
+disciplines: [Engineering]
+url: https://www.sigcse.org/events/symposia/
+frequency: annual
+schedule: Every February or March; papers are usually due in late June and posters, panels, and other sessions in the fall.
+summary: The main meeting for computing education, with research and experience papers, nifty assignments, and a doctoral consortium.
+checked: 2026-11-09
+meetings:
+  - name: SIGCSE TS 2027
+    start: 2027-02-17
+    end: 2027-02-20
+    city: Sacramento, California
+    country: USA
+    venue: SAFE Credit Union Convention Center
+    format: in person
+    url: https://2027.sigcse-ts.acm.org/
+    dates_source: official
+    deadlines:
+      - {label: Paper abstracts due, date: 2026-06-26, kind: proposal}
+      - {label: "Posters, demos, and other sessions due", date: 2026-09-30, kind: proposal}
+      - {label: Early registration ends, date: 2027-01-04, kind: registration}
+      - {label: Presenters must register, date: 2027-02-01, kind: registration}

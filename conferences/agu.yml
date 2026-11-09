@@ -1,0 +1,23 @@
+name: AGU Annual Meeting
+short: AGU
+sponsors: [American Geophysical Union]
+sponsor_type: US society
+kind: track
+disciplines: [Earth Science]
+url: https://www.agu.org/annual-meeting
+frequency: annual
+schedule: Every December; abstracts are usually due in late July or early August.
+summary: The largest Earth and space science meeting, with an Education section and sessions on science communication and engagement.
+checked: 2026-11-09
+meetings:
+  - name: AGU26
+    start: 2026-12-07
+    end: 2026-12-11
+    city: San Francisco, California
+    country: USA
+    venue: Moscone Center
+    format: hybrid
+    url: https://www.agu.org/annual-meeting
+    dates_source: official
+    deadlines:
+      - {label: Abstracts due, date: 2026-08-05, kind: proposal}

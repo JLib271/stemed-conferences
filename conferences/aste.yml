@@ -1,0 +1,20 @@
+name: ASTE International Conference
+short: ASTE
+sponsors: [Association for Science Teacher Education]
+sponsor_type: US society
+kind: education
+disciplines: [Science Education]
+url: https://theaste.org
+frequency: annual
+schedule: Every January; proposals are usually due in the spring.
+summary: For science teacher educators and researchers, on preparing and supporting science teachers.
+checked: 2026-11-09
+meetings:
+  - name: ASTE 2027
+    start: 2027-01-06
+    end: 2027-01-09
+    city: Providence, Rhode Island
+    country: USA
+    venue: Omni Providence Hotel
+    url: https://theaste.org
+    dates_source: announced

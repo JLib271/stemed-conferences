@@ -1,0 +1,79 @@
+name: Suggest a conference
+description: A meeting run by a scholarly or professional society, or funded by a US federal agency, with STEM+ education content.
+title: "Add: "
+labels: ["add conference"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! We list meetings run by a scholarly or professional society (US or international) or funded by
+        a US federal agency, that are about STEM+ education or have education sessions, divisions, or tracks.
+        Meetings run by for-profit conference companies are not listed, and if we are not sure a meeting meets
+        this rule, we leave it out. A maintainer checks the sponsor's pages before listing it.
+  - type: input
+    id: name
+    attributes: {label: "Meeting name", placeholder: "e.g. NARST Annual International Conference"}
+    validations: {required: true}
+  - type: input
+    id: sponsor
+    attributes: {label: "Society, association, or agency that runs or funds it", placeholder: "e.g. National Association for Research in Science Teaching"}
+    validations: {required: true}
+  - type: dropdown
+    id: sponsor_type
+    attributes:
+      label: Run or funded by
+      options: ["US society", "International society", "US federal agency"]
+    validations: {required: true}
+  - type: input
+    id: sponsor_url
+    attributes: {label: "Link to the society's or agency's own page about the meeting", description: "This is how we check who runs it."}
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: "Link to the meeting page, if different"}
+  - type: input
+    id: dates
+    attributes: {label: "Next dates and place, if announced", placeholder: "e.g. March 14-17, 2027, Boston"}
+  - type: input
+    id: deadline
+    attributes: {label: "Proposal or abstract deadline, if announced", placeholder: "YYYY-MM-DD, or 'usually mid-August'"}
+  - type: input
+    id: schedule
+    attributes: {label: "How often it meets", placeholder: "e.g. every March; every two years in July"}
+  - type: input
+    id: travel
+    attributes: {label: "Travel awards, scholarships, or stipends, if any"}
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of meeting
+      options:
+        - "Education conference"
+        - "Discipline meeting with education sessions"
+        - "Field meeting (History & Philosophy of Science, Human Dimensions, or Science & Health Communication)"
+    validations: {required: true}
+  - type: checkboxes
+    id: disciplines
+    attributes:
+      label: Disciplines (leave blank if it covers all STEM+ fields)
+      options:
+        - label: Agriculture
+        - label: Bioscience
+        - label: Chemistry
+        - label: Earth Science
+        - label: Engineering (including computing)
+        - label: Health Education
+        - label: History & Philosophy of Science (including history of medicine and science and technology studies)
+        - label: Human Dimensions (including human dimensions of natural resources, forestry, wildlife, and climate change)
+        - label: Learning Science
+        - label: Mathematics
+        - label: Physics
+        - label: Science & Health Communication (including risk and climate communication, public engagement, and science journalism)
+        - label: Science Education
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Sponsor check
+      options:
+        - label: The society, association, or agency named above runs or funds this meeting, as its own pages show.
+          required: true

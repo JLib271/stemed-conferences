@@ -1,0 +1,22 @@
+name: AERA Annual Meeting
+short: AERA
+sponsors: [American Educational Research Association]
+sponsor_type: US society
+kind: education
+url: https://www.aera.net/Events-Meetings/Annual-Meeting
+frequency: annual
+schedule: Every April; submissions are usually due in late July.
+summary: The largest education research meeting, with divisions and special interest groups for STEM education, learning sciences, and research methods.
+checked: 2026-11-09
+meetings:
+  - name: AERA 2027 Annual Meeting
+    start: 2027-04-14
+    end: 2027-04-18
+    city: Toronto, Ontario
+    country: Canada
+    format: in person
+    url: https://www.aera.net/Events-Meetings/Annual-Meeting/2027-Annual-Meeting
+    dates_source: official
+    deadlines:
+      - {label: Submissions due, date: 2026-07-24, kind: proposal}
+      - {label: Decisions sent, date: 2026-11-06, kind: other}

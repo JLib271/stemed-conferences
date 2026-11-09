@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STEMEd+ Conferences</title>
+<meta name="description" content="Upcoming meetings, proposal deadlines, and travel support for STEM+ education: education conferences and discipline meetings with education sessions, run by scholarly societies or funded by US federal agencies.">
+<link rel="alternate" type="application/rss+xml" title="Newly listed meetings" href="feeds/new.xml">
+<style>
+  :root { --ink:#1d2433; --muted:#5b6475; --line:#dde2ea; --bg:#f7f8fa; --card:#fff; --accent:#1f5f8b; --soft:#e6f0f7; --softline:#c9dcea;
+          --soon:#a3261b; --soonbg:#fdecea; --mid:#7a4f00; --midbg:#fdf3dc; --ok:#1f6b3a; --okbg:#e7f4ec; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+  .stemedplus { display: inline-block; margin: 0 0 8px; } .stemedplus img { display: block; height: 48px; width: auto; }
+  header { background: var(--card); border-bottom: 1px solid var(--line); }
+  header .wrap { padding-top: 26px; padding-bottom: 20px; }
+  h1 { font-size: 1.7rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); max-width: 72ch; }
+  .links { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .btn { display: inline-block; padding: 8px 14px; border-radius: 6px; background: var(--accent); color: #fff; font-weight: 600; text-decoration: none; }
+  .btn.secondary { background: var(--card); color: var(--accent); border: 1px solid var(--accent); }
+  a { color: var(--accent); }
+  .soon { background: var(--soft); border-bottom: 1px solid var(--softline); }
+  .soon .wrap { padding-top: 18px; padding-bottom: 18px; }
+  .soon h2 { font-size: 1.05rem; margin: 0 0 10px; }
+  .strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+  .strip .c { background: var(--card); border: 1px solid var(--softline); border-radius: 8px; padding: 10px 12px; font-size: .92rem; }
+  .strip .c a { font-weight: 600; text-decoration: none; } .strip .c a:hover { text-decoration: underline; }
+  .strip .c .m { color: var(--muted); font-size: .82rem; margin-top: 3px; }
+  .controls { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 8px; }
+  .controls .search { grid-column: span 2; }
+  label { display: block; font-size: .8rem; font-weight: 600; color: var(--muted); margin-bottom: 4px; }
+  input, select { width: 100%; padding: 9px 10px; font: inherit; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); }
+  input[type=checkbox] { width: auto; margin: 0 6px 0 0; }
+  .check { display: flex; align-items: end; padding-bottom: 9px; } .check label { display: flex; align-items: center; margin: 0; font-size: .92rem; color: var(--ink); font-weight: 500; }
+  input:focus, select:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin: 6px 0 12px; }
+  #count { color: var(--muted); font-size: .9rem; margin: 0; }
+  button.link { font: inherit; font-size: .9rem; background: none; border: 0; color: var(--accent); cursor: pointer; padding: 0; text-decoration: underline; }
+  h2.sec { font-size: 1.15rem; margin: 26px 0 10px; }
+  ol.list { list-style: none; margin: 0; padding: 0; }
+  ol.list li { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin-bottom: 8px; }
+  .t { font-weight: 600; font-size: 1.04rem; text-decoration: none; } .t:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: .88rem; margin-top: 2px; }
+  .due { display: inline-block; margin-top: 8px; font-size: .88rem; font-weight: 600; padding: 3px 10px; border-radius: 6px; background: #eef0f3; }
+  .due.soon { background: var(--soonbg); color: var(--soon); } .due.mid { background: var(--midbg); color: var(--mid); } .due.ok { background: var(--okbg); color: var(--ok); }
+  .note { color: var(--muted); font-size: .85rem; margin-top: 4px; }
+  .sum { margin: 8px 0 0; font-size: .94rem; }
+  ul.dl { margin: 8px 0 0; padding-left: 18px; font-size: .9rem; }
+  ul.dl li { background: none; border: 0; padding: 0; margin: 0; border-radius: 0; }
+  ul.dl .past { color: var(--muted); }
+  dl.facts { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 8px 0 0; font-size: .9rem; }
+  dl.facts dt { color: var(--muted); font-weight: 600; } dl.facts dd { margin: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
+  .tag { font-size: .75rem; padding: 2px 8px; border-radius: 999px; background: #eef0f3; color: var(--ink); font-weight: 600; }
+  .tag.st { background: var(--soft); color: var(--accent); }
+  .tag.warn { background: var(--midbg); color: var(--mid); }
+  .tag.k { background: #fff; border: 1px solid var(--line); color: var(--muted); font-weight: 500; }
+  .acts { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 10px; font-size: .88rem; }
+  .acts a { color: var(--accent); }
+  .more { text-align: center; margin: 14px 0 10px; }
+  .more button { font: inherit; padding: 8px 16px; border-radius: 6px; border: 1px solid var(--accent); background: var(--card); color: var(--accent); cursor: pointer; }
+  .empty { padding: 26px; text-align: center; color: var(--muted); }
+  .disclaimer { font-size: .85rem; color: var(--muted); margin: 0 0 10px; }
+  footer { background: var(--card); border-top: 1px solid var(--line); padding: 20px 0 30px; font-size: .9rem; color: var(--muted); margin-top: 30px; }
+  footer h2 { font-size: 1rem; color: var(--ink); margin: 18px 0 6px; } footer h2:first-child { margin-top: 0; }
+  footer ul { margin: 6px 0 12px; padding-left: 18px; }
+  footer details { margin: 0 0 12px; } footer summary { cursor: pointer; color: var(--accent); }
+  code { background: #eef0f3; padding: 1px 5px; border-radius: 4px; font-size: .85em; word-break: break-all; }
+  .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  @media (max-width: 860px) { .controls { grid-template-columns: 1fr 1fr; } .controls .search { grid-column: 1 / -1; } }
+  .join { background: #e6f0f7; border: 1px solid #c9dcea; border-radius: 8px; padding: 10px 14px; font-size: .93rem; color: #1d2433; }
+  .join p { margin: 4px 0; }
+  .join-top { margin: 14px 0 0; }
+  .join-bottom { margin: 0 0 16px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="stemedplus" href="https://stemedplus.org" title="STEMEd+ Commons"><img src="stemedplus-commons-logo.png" alt="STEMEd+ Commons" width="139" height="48"></a>
+    <h1 id="title">STEMEd+ Conferences</h1>
+    <p id="tagline"></p>
+    <div class="links">
+      <a class="btn" href="#calendar">Calendars</a>
+      <a class="btn secondary" href="feeds/new.xml">New meetings (RSS)</a>
+      <a class="btn secondary" id="suggest" href="#">Suggest a conference</a>
+    </div>
+  </div>
+</header>
+<div class="wrap"><div class="join join-top" role="note"><p><strong>STEMEd+ Conferences is part of STEMEd+ Commons.</strong> Join free to deposit instruments in the <a href="https://works.hcommons.org/collections/humetainstrumentlibrary/" target="_blank" rel="noopener noreferrer">HuMeta Instrument Library collection<span class="vh"> (opens in a new tab)</span></a>, share your work in the <a href="https://works.hcommons.org/collections/stemedplus/" target="_blank" rel="noopener noreferrer">STEMEd+ collection<span class="vh"> (opens in a new tab)</span></a>, follow new work, and connect with STEM+ education researchers. You can sign in with GitHub, Google, ORCID, or your institution.</p><p><a href="https://stemedplus.hcommons.org/" target="_blank" rel="noopener noreferrer">Visit STEMEd+ Commons<span class="vh"> (opens in a new tab)</span></a> · <a href="https://support.hcommons.org/profiles/login-and-registration/" target="_blank" rel="noopener noreferrer">How to join<span class="vh"> (opens in a new tab)</span></a></p></div></div>
+<section class="soon" aria-labelledby="soon-h">
+  <div class="wrap">
+    <h2 id="soon-h">Deadlines in the next 60 days</h2>
+    <div id="strip" class="strip"></div>
+  </div>
+</section>
+<main class="wrap">
+  <div class="controls" role="search">
+    <div class="search"><label for="q">Search</label><input id="q" type="search" placeholder="Meeting, society, or city" autocomplete="off"></div>
+    <div><label for="discipline">Discipline</label><select id="discipline"><option value="">All</option></select></div>
+    <div><label for="kind">Type of meeting</label><select id="kind"><option value="">All</option></select></div>
+    <div><label for="stype">Run or funded by</label><select id="stype"><option value="">All</option></select></div>
+    <div><label for="where">Where</label><select id="where">
+      <option value="">Anywhere</option><option value="us">In the US</option><option value="intl">Outside the US</option><option value="remote">Online or hybrid</option>
+    </select></div>
+    <div><label for="within">Starts within</label><select id="within">
+      <option value="">Any time</option><option value="90">3 months</option><option value="180">6 months</option><option value="365">12 months</option>
+    </select></div>
+    <div class="check"><label><input id="travel" type="checkbox"> Travel support offered</label></div>
+  </div>
+  <div class="bar">
+    <p id="count" aria-live="polite"></p>
+    <button type="button" class="link" id="share">Copy link to this view</button>
+  </div>
+  <p class="disclaimer">Dates and deadlines change. Always confirm on the meeting's own page before you submit or book travel.</p>
+  <h2 class="sec">Upcoming meetings</h2>
+  <ol id="list" class="list"></ol>
+  <div class="more"><button id="more" type="button" hidden>Show more</button></div>
+  <h2 class="sec" id="recurring-h">Recurring meetings, next dates not yet listed</h2>
+  <p class="disclaimer">These meet on a regular schedule, but the next meeting's dates are not announced yet, or not yet confirmed here.</p>
+  <ol id="recurring" class="list"></ol>
+</main>
+<footer>
+  <div class="wrap">
+    <h2 id="calendar">Calendars</h2>
+    <p>Subscribe in Google Calendar, Outlook, or Apple Calendar (choose "add calendar from URL"):</p>
+    <p>Meetings: <code id="meetingsics"></code> <button type="button" class="link" data-copy="meetingsics">Copy</button></p>
+    <p>Proposal, registration, and travel deadlines: <code id="deadlinesics"></code> <button type="button" class="link" data-copy="deadlinesics">Copy</button></p>
+    <p>Each meeting also has an "Add to calendar" link for just that meeting.</p>
+    <h2>What is listed</h2>
+    <p>Meetings run by a scholarly or professional society, in the US or internationally, or funded by a US federal agency such as NSF. Meetings run by for-profit conference companies, and any meeting that might be predatory, are left out; if we are not sure, it is not listed. Each file is checked against the sponsor's own pages on the date shown.</p>
+    <p>Three types are listed: education conferences; discipline meetings with education sessions, divisions, or tracks; and meetings in History &amp; Philosophy of Science, Human Dimensions, and Science &amp; Health Communication, which cover those fields themselves as well as teaching in them. Disciplines use the same categories as STEMEd+ Jobs, Funding, the STEMEd+ Digest, and the STEM+ Education Research Graduate Programs list. Meetings open to all STEM+ fields appear under every discipline.</p>
+    <p>Dates marked "confirm dates" were announced by the sponsor or a partner society but are not yet on the meeting's own page.</p>
+    <h2>Add or correct a listing</h2>
+    <p>Know a meeting we are missing, or see something out of date? <a id="suggest2" href="#">Suggest a conference</a> or <a id="update" href="#">report a correction</a> on GitHub, or <a id="mail" href="#">email the maintainer</a>.</p>
+    <h2>RSS</h2>
+    <p><a href="feeds/new.xml">Newly listed meetings</a>, for feed readers.</p>
+    <div class="join join-bottom" role="note"><p><strong>STEMEd+ Conferences is part of STEMEd+ Commons.</strong> Join free to deposit instruments in the <a href="https://works.hcommons.org/collections/humetainstrumentlibrary/" target="_blank" rel="noopener noreferrer">HuMeta Instrument Library collection<span class="vh"> (opens in a new tab)</span></a>, share your work in the <a href="https://works.hcommons.org/collections/stemedplus/" target="_blank" rel="noopener noreferrer">STEMEd+ collection<span class="vh"> (opens in a new tab)</span></a>, follow new work, and connect with STEM+ education researchers. You can sign in with GitHub, Google, ORCID, or your institution.</p><p><a href="https://stemedplus.hcommons.org/" target="_blank" rel="noopener noreferrer">Visit STEMEd+ Commons<span class="vh"> (opens in a new tab)</span></a> · <a href="https://support.hcommons.org/profiles/login-and-registration/" target="_blank" rel="noopener noreferrer">How to join<span class="vh"> (opens in a new tab)</span></a></p></div>
+    <h2><a id="morehead" href="https://stemedplus.hcommons.org/">More from STEMEd+ Commons</a></h2>
+    <ul id="related"></ul>
+    <p>Presenting? Share your slides, posters, and papers in the <a id="commons" href="#">STEMEd+ Commons</a>.</p>
+    <details id="reviewbox" hidden><summary id="reviewsum">For maintainers</summary><ul id="reviewlist"></ul></details>
+    <p><a id="repo" href="#">About this site</a> · <span id="updated"></span></p>
+  </div>
+</footer>
+<script>
+(function () {
+  'use strict';
+  var MAINTAINER = 'libarkin@msu.edu';
+  var PAGE = 40, state = { d: null, shown: PAGE };
+  var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  var US = ['USA', 'United States'];
+  function el(id) { return document.getElementById(id); }
+  function node(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function ext(a) { a.target = '_blank'; a.rel = 'noopener noreferrer'; a.appendChild(node('span', 'vh', ' (opens in a new tab)')); return a; }
+  function link(href, text, cls) { var a = node('a', cls, text); a.href = href; return ext(a); }
+  function fill(sel, values, labels) { values.forEach(function (v, i) { var o = node('option', '', labels ? labels[i] : v); o.value = v; sel.appendChild(o); }); }
+  function pretty(iso) { if (!iso) return ''; var p = iso.split('-'); return MONTHS[+p[1] - 1] + ' ' + (+p[2]) + ', ' + p[0]; }
+  function span(m) {
+    var s = m.start.split('-'), e = m.end.split('-');
+    if (m.start === m.end) return pretty(m.start);
+    if (s[0] === e[0] && s[1] === e[1]) return MONTHS[+s[1] - 1] + ' ' + (+s[2]) + '–' + (+e[2]) + ', ' + s[0];
+    if (s[0] === e[0]) return MONTHS[+s[1] - 1] + ' ' + (+s[2]) + ' – ' + MONTHS[+e[1] - 1] + ' ' + (+e[2]) + ', ' + s[0];
+    return pretty(m.start) + ' – ' + pretty(m.end);
+  }
+  function daysUntil(iso) { var t = new Date(state.d.today + 'T00:00:00Z'), d = new Date(iso + 'T00:00:00Z'); return Math.round((d - t) / 864e5); }
+  function inUS(m) { return US.indexOf(m.country) !== -1; }
+  function place(m) {
+    if (m.format === 'online') return 'Online';
+    return (inUS(m) ? m.city : m.city + ', ' + m.country) + (m.format === 'hybrid' ? ', and online' : '');
+  }
+  function sponsorsText(x) { return x.sponsors.join(' and '); }
+
+  function dateBadge(m) {
+    var b = node('span', 'due'), n = daysUntil(m.start);
+    if (m.happening) { b.textContent = span(m) + ' · happening now'; b.className += ' soon'; }
+    else { b.textContent = span(m) + ' · ' + (n === 1 ? 'tomorrow' : n < 60 ? 'in ' + n + ' days' : 'in ' + Math.round(n / 30.4) + ' months'); b.className += n <= 30 ? ' soon' : n <= 90 ? ' mid' : ' ok'; }
+    return b;
+  }
+
+  function icsFor(m) {
+    var e = new Date(m.end + 'T00:00:00Z'); e.setUTCDate(e.getUTCDate() + 1);
+    function esc(s) { return s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,'); }
+    var lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//STEMEd+//Conferences//EN', 'BEGIN:VEVENT',
+      'UID:' + m.id.replace(/:/g, '-') + '@stemed-conferences', 'DTSTAMP:' + state.d.generated.replace(/[-:]/g, ''),
+      'DTSTART;VALUE=DATE:' + m.start.replace(/-/g, ''), 'DTEND;VALUE=DATE:' + e.toISOString().slice(0, 10).replace(/-/g, ''),
+      'SUMMARY:' + esc(m.name), 'LOCATION:' + esc([m.venue, place(m)].filter(Boolean).join(', ')),
+      'DESCRIPTION:' + esc(sponsorsText(m) + '. Confirm on the meeting page: ' + m.url), 'URL:' + m.url, 'END:VEVENT', 'END:VCALENDAR'];
+    return 'data:text/calendar;charset=utf-8,' + encodeURIComponent(lines.join('\r\n'));
+  }
+
+  // Filters shared by meetings and series.
+  function matchesCommon(x, text) {
+    var q = el('q').value.trim().toLowerCase(), dsc = el('discipline').value, k = el('kind').value, st = el('stype').value;
+    if (q && text.toLowerCase().indexOf(q) === -1) return false;
+    if (dsc && !x.all_fields && x.disciplines.indexOf(dsc) === -1) return false;
+    if (k && x.kind !== k) return false;
+    if (st && x.sponsor_type !== st) return false;
+    if (el('travel').checked && !x.travel_support) return false;
+    return true;
+  }
+  function matches(m) {
+    var w = el('where').value, within = el('within').value;
+    if (!matchesCommon(m, [m.name, m.series_name, m.short, sponsorsText(m), m.city, m.country, m.venue].join(' '))) return false;
+    if (w === 'us' && !inUS(m)) return false;
+    if (w === 'intl' && inUS(m)) return false;
+    if (w === 'remote' && m.format === 'in person') return false;
+    if (within && daysUntil(m.start) > +within) return false;
+    return true;
+  }
+  function seriesMatches(s) {
+    if (s.next) return false;
+    if (el('where').value || el('within').value) return false;   // no dates or place to filter on
+    return matchesCommon(s, [s.name, s.short, sponsorsText(s), s.schedule].join(' '));
+  }
+
+  function tags(x) {
+    var t = node('div', 'tags');
+    t.appendChild(node('span', 'tag st', state.d.kinds[x.kind]));
+    t.appendChild(node('span', 'tag', x.sponsor_type));
+    if (x.all_fields) t.appendChild(node('span', 'tag', 'All STEM+ fields'));
+    else x.disciplines.forEach(function (d) { t.appendChild(node('span', 'tag', d)); });
+    if (x.travel_support) t.appendChild(node('span', 'tag k', 'Travel support'));
+    return t;
+  }
+
+  function card(m) {
+    var li = document.createElement('li');
+    li.appendChild(link(m.url, m.name, 't'));
+    li.appendChild(node('div', 'meta', sponsorsText(m)));
+    li.appendChild(dateBadge(m));
+    li.appendChild(node('div', 'note', [m.venue, place(m)].filter(Boolean).join(', ')));
+    if (m.note) li.appendChild(node('div', 'note', m.note));
+    if (m.deadlines.length) {
+      var ul = node('ul', 'dl');
+      m.deadlines.forEach(function (d) {
+        var item = node('li', d.passed ? 'past' : '', d.label + ': ' + pretty(d.date) + (d.passed ? ' (passed)' : '') + (d.note ? '. ' + d.note : ''));
+        ul.appendChild(item);
+      });
+      li.appendChild(ul);
+    }
+    var dl = node('dl', 'facts');
+    function fact(term, val) { if (!val) return; dl.appendChild(node('dt', '', term)); dl.appendChild(node('dd', '', val)); }
+    fact('Travel support', m.travel_support);
+    fact('Funding', m.funding_note);
+    if (dl.childNodes.length) li.appendChild(dl);
+    var t = tags(m);
+    if (m.dates_source === 'announced') t.appendChild(node('span', 'tag warn', 'Confirm dates'));
+    li.appendChild(t);
+    var acts = node('div', 'acts');
+    acts.appendChild(link(m.url, 'Meeting page'));
+    var s = state.series[m.series]; if (s && s.url !== m.url) acts.appendChild(link(s.url, 'About the series'));
+    if (m.travel_support_url) acts.appendChild(link(m.travel_support_url, 'Travel support'));
+    var a = node('a', '', 'Add to calendar'); a.href = icsFor(m); a.download = m.id.replace(/:/g, '-') + '.ics'; acts.appendChild(a);
+    acts.appendChild(link(updateUrl(m.name, m.file), 'Report a correction'));
+    li.appendChild(acts);
+    return li;
+  }
+
+  function seriesCard(s) {
+    var li = document.createElement('li');
+    li.appendChild(link(s.url, s.name, 't'));
+    li.appendChild(node('div', 'meta', sponsorsText(s)));
+    li.appendChild(node('div', 'note', s.schedule));
+    li.appendChild(node('p', 'sum', s.summary));
+    var dl = node('dl', 'facts');
+    function fact(term, val) { if (!val) return; dl.appendChild(node('dt', '', term)); dl.appendChild(node('dd', '', val)); }
+    fact('Travel support', s.travel_support);
+    fact('Funding', s.funding_note);
+    fact('Last checked', pretty(s.checked));
+    li.appendChild(dl);
+    li.appendChild(tags(s));
+    var acts = node('div', 'acts');
+    acts.appendChild(link(s.url, 'Series page'));
+    if (s.travel_support_url) acts.appendChild(link(s.travel_support_url, 'Travel support'));
+    acts.appendChild(link(updateUrl(s.name, s.file), 'Report new dates or a correction'));
+    li.appendChild(acts);
+    return li;
+  }
+
+  function render() {
+    var items = state.d.meetings.filter(matches), list = el('list');
+    list.innerHTML = '';
+    var rec = state.d.series.filter(seriesMatches), rl = el('recurring');
+    rl.innerHTML = '';
+    el('count').textContent = items.length + (items.length === 1 ? ' upcoming meeting' : ' upcoming meetings') +
+      (rec.length ? ' and ' + rec.length + (rec.length === 1 ? ' recurring meeting' : ' recurring meetings') + ' without dates yet' : '');
+    if (!items.length) list.appendChild(node('li', 'empty', 'No upcoming meetings match. Try clearing a filter.'));
+    items.slice(0, state.shown).forEach(function (m) { list.appendChild(card(m)); });
+    el('more').hidden = items.length <= state.shown;
+    rec.forEach(function (s) { rl.appendChild(seriesCard(s)); });
+    el('recurring-h').hidden = !rec.length; el('recurring').hidden = !rec.length;
+    el('recurring-h').nextElementSibling.hidden = !rec.length;
+  }
+
+  var IDS = ['q', 'discipline', 'kind', 'stype', 'where', 'within', 'travel'];
+  function val(e) { return e.type === 'checkbox' ? (e.checked ? '1' : '') : e.value; }
+  function viewHash() { return IDS.map(function (id) { var v = val(el(id)); return v ? id + '=' + encodeURIComponent(v) : null; }).filter(Boolean).join('&'); }
+  function readHash() {
+    location.hash.replace(/^#/, '').split('&').forEach(function (p) {
+      var kv = p.split('='); if (IDS.indexOf(kv[0]) === -1 || kv.length !== 2) return;
+      var e = el(kv[0]), v = decodeURIComponent(kv[1]);
+      if (e.type === 'checkbox') e.checked = v === '1'; else e.value = v;
+    });
+  }
+  function changed() { state.shown = PAGE; var h = viewHash(); history.replaceState(null, '', h ? '#' + h : location.pathname + location.search); render(); }
+
+  function strip() {
+    var box = el('strip'), soon = [];
+    state.d.meetings.forEach(function (m) {
+      m.deadlines.forEach(function (d) { if (!d.passed && daysUntil(d.date) <= 60) soon.push({ m: m, d: d }); });
+    });
+    soon.sort(function (a, b) { return a.d.date < b.d.date ? -1 : a.d.date > b.d.date ? 1 : 0; });
+    if (!soon.length) { box.appendChild(node('p', '', 'No listed deadlines in the next 60 days.')); return; }
+    soon.slice(0, 8).forEach(function (x) {
+      var c = node('div', 'c'); c.appendChild(link(x.m.url, x.m.name));
+      c.appendChild(node('div', 'm', x.d.label + ' · ' + pretty(x.d.date)));
+      box.appendChild(c);
+    });
+  }
+
+  function issueUrl(template, title) { return state.d.site.repo_url + '/issues/new?template=' + template + (title ? '&title=' + encodeURIComponent(title) : ''); }
+  function updateUrl(name, file) { return issueUrl('update_conference.yml', 'Update: ' + name) + '&listing=' + encodeURIComponent(name + ' (' + file + ')'); }
+
+  function init(d) {
+    state.d = d; state.series = {};
+    d.series.forEach(function (s) { state.series[s.series] = s; });
+    var site = d.site;
+    document.title = site.title; el('title').textContent = site.title; el('tagline').textContent = site.tagline;
+    fill(el('discipline'), d.disciplines);
+    var kinds = Object.keys(d.kinds); fill(el('kind'), kinds, kinds.map(function (k) { return d.kinds[k]; }));
+    fill(el('stype'), d.sponsor_types);
+    readHash();
+    ['suggest', 'suggest2'].forEach(function (id) { el(id).href = issueUrl('suggest_conference.yml'); ext(el(id)); });
+    el('update').href = issueUrl('update_conference.yml'); ext(el('update'));
+    el('mail').href = 'mailto:' + MAINTAINER + '?subject=' + encodeURIComponent('STEMEd+ Conferences: new or corrected listing') +
+      '&body=' + encodeURIComponent('Meeting name:\nSociety or agency that runs or funds it:\nLink to the meeting page:\nDates and place:\nProposal deadline (if known):\nTravel support (if any):\nCorrection (if this is about an existing listing):\n');
+    el('repo').href = site.repo_url; ext(el('repo'));
+    el('commons').href = site.commons_home; ext(el('commons'));
+    el('morehead').href = site.commons_home; ext(el('morehead'));
+    ['meetings', 'deadlines'].forEach(function (k) { el(k + 'ics').textContent = new URL('feeds/' + k + '.ics', location.href).href; });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function (b) {
+      b.addEventListener('click', function () { navigator.clipboard && navigator.clipboard.writeText(el(b.getAttribute('data-copy')).textContent); b.textContent = 'Copied'; });
+    });
+    site.related.forEach(function (r) { var li = document.createElement('li'); li.appendChild(link(r.url, r.name)); li.appendChild(document.createTextNode(': ' + r.about)); el('related').appendChild(li); });
+    if (d.review.length) {
+      el('reviewbox').hidden = false; el('reviewsum').textContent = 'For maintainers: ' + d.review.length + ' listing(s) to re-check';
+      d.review.forEach(function (r) { el('reviewlist').appendChild(node('li', '', r.title + ' (' + r.file + '): ' + r.why.join('; '))); });
+    }
+    el('updated').textContent = 'Updated ' + pretty(d.generated.slice(0, 10)) + '.';
+    strip();
+    IDS.forEach(function (id) { el(id).addEventListener(el(id).type === 'checkbox' ? 'change' : 'input', changed); });
+    el('more').addEventListener('click', function () { state.shown += PAGE; render(); });
+    el('share').addEventListener('click', function () { navigator.clipboard && navigator.clipboard.writeText(location.href); el('share').textContent = 'Link copied'; });
+    render();
+  }
+
+  fetch('conferences.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(init).catch(function () {
+    el('list').appendChild(node('li', 'empty', 'The listings could not be loaded. Please try again later.'));
+  });
+})();
+</script>
+</body>
+</html>

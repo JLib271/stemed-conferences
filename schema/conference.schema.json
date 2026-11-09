@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "STEMEd+ Conferences: a conference series",
+  "description": "One recurring conference, with its upcoming meetings. One file per series in conferences/. List only meetings run by a scholarly or professional society (US or international) or funded by a US federal agency. If you are not sure a meeting meets that rule, or might be predatory, leave it out.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["name", "sponsors", "sponsor_type", "kind", "url", "frequency", "schedule", "summary", "checked"],
+  "properties": {
+    "name": {"type": "string", "minLength": 3, "description": "Series name as the sponsor gives it, e.g. NARST Annual International Conference."},
+    "short": {"type": "string", "description": "Short name or acronym, e.g. NARST."},
+    "sponsors": {
+      "type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2},
+      "description": "The societies, associations, or agencies that run or fund it."
+    },
+    "sponsor_type": {
+      "enum": ["US society", "International society", "US federal agency"],
+      "description": "US society: a US-based scholarly or professional society or association. International society: one based outside the US or organized internationally. US federal agency: funded by NSF, NIH, NASA, USDA, NOAA, the Department of Education, or another US agency (say how in funding_note)."
+    },
+    "funding_note": {"type": "string", "description": "For federally funded meetings: which agency and how (e.g. hosted by AACC with NSF support)."},
+    "kind": {
+      "enum": ["education", "track", "field"],
+      "description": "education: a conference about STEM+ teaching, learning, or education research. track: a discipline meeting with education sessions, divisions, or tracks. field: a meeting of a field-scope discipline (History & Philosophy of Science, Human Dimensions, Science & Health Communication)."
+    },
+    "disciplines": {
+      "type": "array", "uniqueItems": true, "items": {"type": "string"},
+      "description": "Labels from the STEMEd+ discipline list (stemed_conferences/stemedplus_disciplines.json, kept in HuMeta). Leave empty for meetings that cover all STEM+ fields."
+    },
+    "url": {"type": "string", "format": "uri", "pattern": "^https?://", "description": "The sponsor's page for the series."},
+    "frequency": {"enum": ["annual", "twice a year", "biennial", "quadrennial", "irregular"]},
+    "schedule": {"type": "string", "minLength": 5, "description": "When it usually happens and when proposals are usually due, in a sentence."},
+    "travel_support": {"type": "string", "description": "Travel awards, student scholarships, stipends, or registration support, in a sentence."},
+    "travel_support_url": {"type": "string", "format": "uri", "pattern": "^https?://"},
+    "summary": {"type": "string", "minLength": 20, "maxLength": 400, "description": "Who it is for and what happens there, in your own words."},
+    "checked": {"type": "string", "format": "date", "description": "When someone last checked this file against the sponsor's pages."},
+    "notes": {"type": "string", "description": "Notes for maintainers; not shown on the site."},
+    "meetings": {
+      "type": "array",
+      "description": "Announced meetings. Past ones may stay; the site hides them.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "start", "end", "city", "country", "url", "dates_source"],
+        "properties": {
+          "name": {"type": "string", "minLength": 3, "description": "e.g. NARST 2027."},
+          "start": {"type": "string", "format": "date"},
+          "end": {"type": "string", "format": "date"},
+          "city": {"type": "string", "description": "City and state or province, e.g. Boston, Massachusetts. 'Online' for virtual meetings."},
+          "country": {"type": "string"},
+          "venue": {"type": "string"},
+          "format": {"enum": ["in person", "hybrid", "online"]},
+          "url": {"type": "string", "format": "uri", "pattern": "^https?://", "description": "The meeting's own page."},
+          "dates_source": {
+            "enum": ["official", "announced"],
+            "description": "official: dates and place are on the sponsor's own page for this meeting. announced: the sponsor or a partner society has announced them, but the meeting page does not show them yet."
+          },
+          "note": {"type": "string"},
+          "deadlines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["label", "date"],
+              "properties": {
+                "label": {"type": "string", "description": "e.g. Proposals due, Early registration ends, Travel award applications due."},
+                "date": {"type": "string", "format": "date"},
+                "kind": {"enum": ["proposal", "registration", "travel", "other"], "default": "other"},
+                "note": {"type": "string"}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
