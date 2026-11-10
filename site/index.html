@@ -83,8 +83,8 @@
     <h1 id="title">STEMEd+ Conferences</h1>
     <p id="tagline"></p>
     <div class="links">
-      <a class="btn" href="#calendar">Calendars</a>
-      <a class="btn secondary" href="feeds/new.xml">New meetings (RSS)</a>
+      <a class="btn" href="#calendar">Deadline calendar</a>
+      <a class="btn secondary" href="feeds/new.xml">New listings (RSS)</a>
       <a class="btn secondary" id="suggest" href="#">Suggest a conference</a>
     </div>
   </div>
@@ -310,7 +310,7 @@
   function strip() {
     var box = el('strip'), soon = [];
     state.d.meetings.forEach(function (m) {
-      m.deadlines.forEach(function (d) { if (!d.passed && daysUntil(d.date) <= 60) soon.push({ m: m, d: d }); });
+      m.deadlines.forEach(function (d) { if (!d.passed && d.kind !== 'other' && daysUntil(d.date) <= 60) soon.push({ m: m, d: d }); });
     });
     soon.sort(function (a, b) { return a.d.date < b.d.date ? -1 : a.d.date > b.d.date ? 1 : 0; });
     if (!soon.length) { box.appendChild(node('p', '', 'No listed deadlines in the next 60 days.')); return; }

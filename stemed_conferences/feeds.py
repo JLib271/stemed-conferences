@@ -122,4 +122,4 @@ def write_ics(folder: Path, meetings: List[dict], site: dict, now: dt.datetime) 
     (folder / "deadlines.ics").write_bytes(_calendar(
         f"{site['title']}: deadlines",
         "Proposal, registration, and travel-award deadlines for STEM+ education conferences. Always confirm on the meeting page.",
-        [deadline_event(m, d, stamp) for m in meetings for d in m["deadlines"] if not d["passed"]]))
+        [deadline_event(m, d, stamp) for m in meetings for d in m["deadlines"] if not d["passed"] and d["kind"] != "other"]))

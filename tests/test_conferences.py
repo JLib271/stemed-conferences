@@ -109,6 +109,7 @@ class FeedTests(unittest.TestCase):
         self.assertIn("DTEND;VALUE=DATE:20270304", meetings)
         self.assertIn("Travel awards due", deadlines)
         self.assertNotIn("Proposals due", deadlines)
+        self.assertNotIn("Decisions sent", deadlines)
         for text in (meetings, deadlines):
             for line in text.split("\r\n"):
                 self.assertLessEqual(len(line.encode("utf-8")), 75)
