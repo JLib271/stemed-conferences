@@ -24,10 +24,13 @@
   .soon { background: var(--soft); border-bottom: 1px solid var(--softline); }
   .soon .wrap { padding-top: 18px; padding-bottom: 18px; }
   .soon h2 { font-size: 1.05rem; margin: 0 0 10px; }
-  .strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
-  .strip .c { background: var(--card); border: 1px solid var(--softline); border-radius: 8px; padding: 10px 12px; font-size: .92rem; }
-  .strip .c a { font-weight: 600; text-decoration: none; } .strip .c a:hover { text-decoration: underline; }
-  .strip .c .m { color: var(--muted); font-size: .82rem; margin-top: 3px; }
+  .strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+  .strip .c { background: var(--card); border: 1px solid var(--softline); border-radius: 8px; padding: 12px 14px; font-size: .92rem; display: flex; flex-direction: column; }
+  .strip .c .due { font-size: .82rem; font-weight: 700; color: var(--mid); background: var(--midbg); border-radius: 999px; padding: 2px 10px; align-self: flex-start; margin-bottom: 8px; }
+  .strip .c .t { font-weight: 700; text-decoration: none; font-size: 1rem; } .strip .c .t:hover { text-decoration: underline; }
+  .strip .c .m { color: var(--muted); font-size: .84rem; margin-top: 3px; }
+  .strip .c .tags { margin-top: 8px; }
+  .strip .c .acts { margin-top: auto; padding-top: 10px; font-size: .84rem; gap: 12px; }
   .controls { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0 8px; }
   .controls .search { grid-column: span 2; }
   label { display: block; font-size: .8rem; font-weight: 600; color: var(--muted); margin-bottom: 4px; }
@@ -316,8 +319,23 @@
     soon.sort(function (a, b) { return a.d.date < b.d.date ? -1 : a.d.date > b.d.date ? 1 : 0; });
     if (!soon.length) { box.appendChild(node('p', '', 'No listed deadlines in the next 60 days.')); return; }
     soon.slice(0, 8).forEach(function (x) {
-      var c = node('div', 'c'); c.appendChild(link(x.m.url, x.m.name));
-      c.appendChild(node('div', 'm', x.d.label + ' · ' + pretty(x.d.date)));
+      var m = x.m, d = x.d, left = daysUntil(d.date);
+      var c = node('div', 'c');
+      c.appendChild(node('div', 'due', d.label + ': ' + pretty(d.date) + (left <= 0 ? ' (today)' : left === 1 ? ' (tomorrow)' : ' (' + left + ' days)')));
+      c.appendChild(link(m.url, m.name, 't'));
+      c.appendChild(node('div', 'm', sponsorsText(m)));
+      c.appendChild(node('div', 'm', span(m) + (m.dates_source === 'announced' ? ' (announced, confirm dates)' : '')));
+      var where = [m.venue, place(m)].filter(Boolean).join(', ');
+      if (where) c.appendChild(node('div', 'm', where));
+      if (d.note) c.appendChild(node('div', 'm', d.note));
+      c.appendChild(tags(m));
+      var acts = node('div', 'acts');
+      acts.appendChild(link(m.url, 'Meeting page'));
+      var s = state.series[m.series]; if (s && s.url !== m.url) acts.appendChild(link(s.url, 'About the series'));
+      if (m.travel_support_url) acts.appendChild(link(m.travel_support_url, 'Travel support'));
+      var a = node('a', '', 'Add to calendar'); a.href = icsFor(m); a.download = m.id.replace(/:/g, '-') + '.ics'; acts.appendChild(a);
+      acts.appendChild(link(updateUrl(m.name, m.file), 'Report a correction'));
+      c.appendChild(acts);
       box.appendChild(c);
     });
   }
