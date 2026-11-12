@@ -5,7 +5,7 @@ Upcoming meetings, proposal deadlines, and travel support for STEM+ education, i
 
 STEMEd+ Conferences is part of [STEMEd+ Commons](https://stemedplus.hcommons.org/), with
 [STEMEd+ Jobs](https://jlib271.github.io/stemed-jobs/), [STEMEd+ Funding](https://jlib271.github.io/stemed-funding/),
-the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), and the
+the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), [STEMEd+ Professional Learning](https://jlib271.github.io/stemed-professional-learning/), and the
 [STEM+ Education Research Graduate Programs](https://jlib271.github.io/stem-ed-research-programs/) list.
 
 ## What is listed
