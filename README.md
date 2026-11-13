@@ -22,7 +22,7 @@ the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), [STEMEd+ Profess
   and how often each meeting runs. Meetings whose next dates are not announced stay listed under
   "Recurring meetings" so you know what is coming.
 - **Disciplines** come from the list shared across STEMEd+ Commons, kept in
-  [HuMeta](https://github.com/JLib271/HuMeta) (`standard/humeta/stemedplus_disciplines.json`). Each build
+  the [HuMeta profile](https://github.com/JLib271/humeta-profile) (`stemedplus_disciplines.json`). Each build
   refreshes the copy in `stemed_conferences/stemedplus_disciplines.json`, and keeps the stored copy if the
   download fails or HuMeta's version is older.
 
