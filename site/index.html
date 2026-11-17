@@ -200,7 +200,9 @@
   function matchesCommon(x, text) {
     var q = el('q').value.trim().toLowerCase(), dsc = el('discipline').value, k = el('kind').value, st = el('stype').value;
     if (q && text.toLowerCase().indexOf(q) === -1) return false;
-    if (dsc && !x.all_fields && x.disciplines.indexOf(dsc) === -1) return false;
+    // Listings open to all STEM+ fields show under every discipline except named-only ones (STEAM: Arts+STEM).
+    var general = x.all_fields && (state.d.named_only || []).indexOf(dsc) === -1;
+    if (dsc && !general && x.disciplines.indexOf(dsc) === -1) return false;
     if (k && x.kind !== k) return false;
     if (st && x.sponsor_type !== st) return false;
     if (el('travel').checked && !x.travel_support) return false;

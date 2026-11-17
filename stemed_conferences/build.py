@@ -20,6 +20,7 @@ from typing import Dict, List, Optional
 from urllib.request import Request, urlopen
 
 from . import feeds, listings
+from . import stemedplus_disciplines
 from .disciplines import DISCIPLINES, FIELD_DISCIPLINES
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -73,6 +74,7 @@ def run(out: Path, previous: Optional[str], today: dt.date, now: Optional[dt.dat
         "today": today.isoformat(),
         "site": site,
         "disciplines": list(DISCIPLINES),
+        "named_only": list(stemedplus_disciplines.named_only_labels()),  # never listed for "all STEM+ fields"
         "field_disciplines": list(FIELD_DISCIPLINES),
         "kinds": listings.KIND_LABELS,
         "sponsor_types": SPONSOR_TYPES,
