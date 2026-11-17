@@ -70,6 +70,7 @@ body:
         - label: Physics
         - label: Science & Health Communication (including risk and climate communication, public engagement, and science journalism)
         - label: Science Education
+        - label: "STEAM: Arts+STEM"
   - type: checkboxes
     id: confirm
     attributes:
