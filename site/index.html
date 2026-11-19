@@ -90,7 +90,7 @@
     <div class="links">
       <a class="btn" href="#calendar">Deadline calendar</a>
       <a class="btn secondary" href="feeds/new.xml">New listings (RSS)</a>
-      <a class="btn secondary" id="suggest" href="#">Suggest a conference</a>
+      <a class="btn secondary" id="suggest" href="#add">Suggest a conference</a>
     </div>
   </div>
 </header>
@@ -138,7 +138,7 @@
     <p>Meetings run by a scholarly or professional society, in the US or internationally, or funded by a US federal agency such as NSF. Meetings run by for-profit conference companies, and any meeting that might be predatory, are left out; if we are not sure, it is not listed. Each file is checked against the sponsor's own pages on the date shown.</p>
     <p>Three types are listed: education conferences; discipline meetings with education sessions, divisions, or tracks; and meetings in History &amp; Philosophy of Science, Human Dimensions, and Science &amp; Health Communication, which cover those fields themselves as well as teaching in them. Disciplines use the same categories as STEMEd+ Jobs, Funding, the STEMEd+ Digest, and the STEM+ Education Research Graduate Programs list. Meetings open to all STEM+ fields appear under every discipline.</p>
     <p>Dates marked "confirm dates" were announced by the sponsor or a partner society but are not yet on the meeting's own page.</p>
-    <h2>Add or correct a listing</h2>
+    <h2 id="add">Add or correct a listing</h2>
     <p>Know a meeting we are missing, or see something out of date? <a id="suggest2" href="#">Suggest a conference</a> or <a id="update" href="#">report a correction</a> on GitHub, or <a id="mail" href="#">email the maintainer</a>.</p>
     <h2>RSS</h2>
     <p><a href="feeds/new.xml">Newly listed meetings</a>, for feed readers.</p>
@@ -355,7 +355,7 @@
     var kinds = Object.keys(d.kinds); fill(el('kind'), kinds, kinds.map(function (k) { return d.kinds[k]; }));
     fill(el('stype'), d.sponsor_types);
     readHash();
-    ['suggest', 'suggest2'].forEach(function (id) { el(id).href = issueUrl('suggest_conference.yml'); ext(el(id)); });
+    el('suggest2').href = issueUrl('suggest_conference.yml'); ext(el('suggest2'));
     el('update').href = issueUrl('update_conference.yml'); ext(el('update'));
     el('mail').href = 'mailto:' + MAINTAINER + '?subject=' + encodeURIComponent('STEMEd+ Conferences: new or corrected listing') +
       '&body=' + encodeURIComponent('Meeting name:\nSociety or agency that runs or funds it:\nLink to the meeting page:\nDates and place:\nProposal deadline (if known):\nTravel support (if any):\nCorrection (if this is about an existing listing):\n');
@@ -377,6 +377,7 @@
     el('more').addEventListener('click', function () { state.shown += PAGE; render(); });
     el('share').addEventListener('click', function () { navigator.clipboard && navigator.clipboard.writeText(location.href); el('share').textContent = 'Link copied'; });
     render();
+    if (location.hash === '#add') el('add').scrollIntoView();
   }
 
   fetch('conferences.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(init).catch(function () {
