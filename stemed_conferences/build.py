@@ -24,7 +24,7 @@ from . import stemedplus_disciplines
 from .disciplines import DISCIPLINES, FIELD_DISCIPLINES
 
 ROOT = Path(__file__).resolve().parent.parent
-USER_AGENT = "STEMEd+ Conferences (https://github.com/JLib271/stemed-conferences)"
+USER_AGENT = "STEMEd+ Conferences (https://github.com/stemedplus/stemed-conferences)"
 SPONSOR_TYPES = ["US society", "International society", "US federal agency"]
 
 

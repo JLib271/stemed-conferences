@@ -1,12 +1,12 @@
 # STEMEd+ Conferences
 
 Upcoming meetings, proposal deadlines, and travel support for STEM+ education, in one place:
-**https://jlib271.github.io/stemed-conferences/**
+**https://stemedplus.github.io/stemed-conferences/**
 
 STEMEd+ Conferences is part of [STEMEd+ Commons](https://stemedplus.hcommons.org/), with
-[STEMEd+ Jobs](https://jlib271.github.io/stemed-jobs/), [STEMEd+ Funding](https://jlib271.github.io/stemed-funding/),
-the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), [STEMEd+ Professional Development](https://jlib271.github.io/stemed-professional-development/), and the
-[STEM+ Education Research Graduate Programs](https://jlib271.github.io/stem-ed-research-programs/) list.
+[STEMEd+ Jobs](https://stemedplus.github.io/stemed-jobs/), [STEMEd+ Funding](https://stemedplus.github.io/stemed-funding/),
+the [STEMEd+ Digest](https://stemedplus.github.io/STEMEd-Digest/), [STEMEd+ Professional Development](https://stemedplus.github.io/stemed-professional-development/), and the
+[STEM+ Education Research Graduate Programs](https://stemedplus.github.io/stem-ed-research-programs/) list.
 
 ## What is listed
 
@@ -22,7 +22,7 @@ the [STEMEd+ Digest](https://jlib271.github.io/STEMEd-Digest/), [STEMEd+ Profess
   and how often each meeting runs. Meetings whose next dates are not announced stay listed under
   "Recurring meetings" so you know what is coming.
 - **Disciplines** come from the list shared across STEMEd+ Commons, kept in
-  the [HuMeta profile](https://github.com/JLib271/humeta-profile) (`stemedplus_disciplines.json`). Each build
+  the [HuMeta profile](https://github.com/stemedplus/humeta-profile) (`stemedplus_disciplines.json`). Each build
   refreshes the copy in `stemed_conferences/stemedplus_disciplines.json`, and keeps the stored copy if the
   download fails or HuMeta's version is older.
 
@@ -47,8 +47,8 @@ meetings (AASA, ASCD, CoSN, AEFP) are outside the STEM+ scope.
 
 ## Add or correct a listing
 
-- [Suggest a conference](https://github.com/JLib271/stemed-conferences/issues/new?template=suggest_conference.yml)
-- [Report new dates or a correction](https://github.com/JLib271/stemed-conferences/issues/new?template=update_conference.yml)
+- [Suggest a conference](https://github.com/stemedplus/stemed-conferences/issues/new?template=suggest_conference.yml)
+- [Report new dates or a correction](https://github.com/stemedplus/stemed-conferences/issues/new?template=update_conference.yml)
 - No GitHub account? Email the maintainer, Julie Libarkin, at libarkin@msu.edu.
 
 To edit directly, see [CONTRIBUTING.md](CONTRIBUTING.md). Each series is one YAML file in `conferences/`,
